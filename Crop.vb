@@ -49,19 +49,21 @@
         Return False
     End Function
     Private Function Harvest() As Boolean
-        If strType = "Corn" Then
-            If Days >= 60 Or AvgHeight >= 8 * 12 Then
-                If AvgHeight >= 4 * 12 Then
-                    Return True
+        If ReadyPlant Then
+            If strType = "Corn" Then
+                If Days >= 60 Or AvgHeight >= 8 * 12 Then
+                    If AvgHeight >= 4 * 12 Then
+                        Return True
+                    End If
                 End If
-            End If
-        ElseIf strType = "SoyBean" Then
-            If Days >= 45 Or AvgHeight >= 24 Then
-                If AvgHeight >= 12 Then
-                    Return True
+            ElseIf strType = "SoyBean" Then
+                If Days >= 45 Or AvgHeight >= 24 Then
+                    If AvgHeight >= 12 Then
+                        Return True
+                    End If
                 End If
+            ElseIf strType = "Wheat" Then
             End If
-        ElseIf strType = "Wheat" Then
         End If
         Return False
     End Function
