@@ -96,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Silo.vb" />
     <Compile Include="Weather.vb" />
   </ItemGroup>
   <ItemGroup>

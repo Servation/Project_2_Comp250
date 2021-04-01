@@ -7,7 +7,7 @@
 
     Public Sub New()
         _blnRain = vbNull
-        _dblWindSpeed = ""
+        _dblWindSpeed = -1
         _dblTempurature = -1
         _intLuminosity = -1
     End Sub
