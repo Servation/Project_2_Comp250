@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crop.vb" />
+    <Compile Include="Employee.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
