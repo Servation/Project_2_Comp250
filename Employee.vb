@@ -131,7 +131,7 @@
 
     Public Function strReport() As String
         Dim strInfo As String
-        strInfo = "Name: " & Name & ", Address: " & Address & ", Clocked In: " & ClockedIn & ", Wages: " & Wages & ", Work Hours: " & WorkHours & ", Abilities: "
+        strInfo = "Name: " & Name & ", Address: " & Address & ", Clocked In: " & ClockedIn & ", Wages: " & Wages & ", Work Hours: " & WorkHours & vbNewLine & "   Abilities: "
         strInfo &= If(EmployeeManagement, "Empolyee Management, ", "")
         strInfo &= If(AgManagement, "AgManagement, ", "")
         strInfo &= If(Maintenance, "Maintenance, ", "")

@@ -22,6 +22,7 @@ Partial Class Mozart_System
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mozart_System))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblOutput = New System.Windows.Forms.Label()
         Me.btnEmployee = New System.Windows.Forms.Button()
@@ -47,11 +48,16 @@ Partial Class Mozart_System
         'lblOutput
         '
         Me.lblOutput.AutoSize = True
+        Me.lblOutput.BackColor = System.Drawing.Color.Transparent
+        Me.lblOutput.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOutput.ForeColor = System.Drawing.Color.White
         Me.lblOutput.Location = New System.Drawing.Point(300, 155)
         Me.lblOutput.Name = "lblOutput"
-        Me.lblOutput.Size = New System.Drawing.Size(90, 17)
+        Me.lblOutput.Padding = New System.Windows.Forms.Padding(5)
+        Me.lblOutput.Size = New System.Drawing.Size(147, 35)
         Me.lblOutput.TabIndex = 9
         Me.lblOutput.Text = "OUTPUT TEXT"
+        Me.lblOutput.Visible = False
         '
         'btnEmployee
         '
@@ -129,6 +135,7 @@ Partial Class Mozart_System
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1088, 616)
         Me.Controls.Add(Me.btnProductSys)
         Me.Controls.Add(Me.btnWeatherSys)
