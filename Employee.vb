@@ -12,7 +12,7 @@
     Private _blnDroneOps As Boolean
     Private _blnSecurity As Boolean
 
-    Public Sub New(ByVal arg1 As String, ByVal arg2 As String, ByVal arg3 As String, ByVal arg4 As Double, ByVal arg5 As Double)
+    Public Sub New(ByVal arg1 As String, ByVal arg2 As String, ByVal arg3 As Boolean, ByVal arg4 As Double, ByVal arg5 As Double)
 
         _strName = arg1
         _strAddress = arg2
@@ -132,12 +132,12 @@
     Public Function strReport() As String
         Dim strInfo As String
         strInfo = "Name: " & Name & ", Address: " & Address & ", Clocked In: " & ClockedIn & ", Wages: " & Wages & ", Work Hours: " & WorkHours & ", Abilities: "
-        strInfo &= If(EmployeeManagement, "Empolyee Management ", "")
-        strInfo &= If(AgManagement, "AgManagement ", "")
-        strInfo &= If(Maintenance, "Maintenance ", "")
-        strInfo &= If(Technician, "Technician ", "")
-        strInfo &= If(DroneOps, "DroneOps ", "")
-        strInfo &= If(Security, "Security ", "")
+        strInfo &= If(EmployeeManagement, "Empolyee Management, ", "")
+        strInfo &= If(AgManagement, "AgManagement, ", "")
+        strInfo &= If(Maintenance, "Maintenance, ", "")
+        strInfo &= If(Technician, "Technician, ", "")
+        strInfo &= If(DroneOps, "DroneOps, ", "")
+        strInfo &= If(Security, "Security, ", "")
         Return strInfo
     End Function
 
