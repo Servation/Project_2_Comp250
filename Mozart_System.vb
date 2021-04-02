@@ -5,8 +5,8 @@
     Private arrWage() As Double = {40, 33, 25, 25, 25}
     Private arrWorkHours() As Double = {40, 40, 40, 20, 20}
     Private worker(4) As Employee
-    Private crops(100) As Crop
-    Dim corn As New Crop
+    Private corn As New Crop
+    Private silo(1) As Silo
     Private Sub Mozart_System_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblOutput.Text = String.Empty
         For i As Integer = 0 To worker.Count - 1
@@ -20,14 +20,9 @@
         worker(4).Security = True
         corn = New Crop("Corn", 35, 75, 10 * 12, True, True, 1)
 
+        silo(0) = New Silo(False, 60, 99.8, 10)
+        silo(1) = New Silo(True, 0, 83, 15)
 
-        'strType = arg1
-        '_dblSoilMoisture = arg2
-        '_intDays = arg3
-        '_dblAvgHeight = arg4
-        '_blnReadyPlant = arg5
-        '_blnReadyHarvest = arg6
-        '_dblAcres = arg7
 
     End Sub
 
@@ -70,5 +65,15 @@
 
     Private Sub btnCrops_Click(sender As Object, e As EventArgs) Handles btnCrops.Click
         lblOutput.Text = corn.PrintOut()
+    End Sub
+
+    Private Sub btnWeatherSys_Click(sender As Object, e As EventArgs) Handles btnWeatherSys.Click
+
+    End Sub
+
+    Private Sub btnProductSys_Click(sender As Object, e As EventArgs) Handles btnProductSys.Click
+        For i As Integer = 0 To silo.Count - 1
+            lblOutput.Text = silo(i).MozartRelay()
+        Next
     End Sub
 End Class

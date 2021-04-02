@@ -59,9 +59,9 @@
     Public Function MozartRelay() As String
 
         Dim strInfo As String
-        strInfo = "Curently Empty:" & _blnEmpty &
-            ", Fill Level:" & _dblFillLevel &
-            ", Tempurature:" & _dblTempurature &
+        strInfo = "Curently Empty: " & _blnEmpty &
+            ", Fill Level: " & _dblFillLevel &
+            ", Tempurature: " & _dblTempurature &
             ", Moisture Level: " & _intMoistureLevel
 
         Return strInfo
