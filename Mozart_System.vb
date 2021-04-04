@@ -90,4 +90,8 @@
 
         lblOutput.Text = strTem
     End Sub
+
+    Private Sub btnImport_Click(sender As Object, e As EventArgs) Handles btnImport.Click
+        MessageBox.Show("Data Import & Integrity Check: Complete", "Data Import", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
 End Class

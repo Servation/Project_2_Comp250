@@ -33,6 +33,7 @@ Partial Class Mozart_System
         Me.btnEquipSys = New System.Windows.Forms.Button()
         Me.btnWeatherSys = New System.Windows.Forms.Button()
         Me.btnProductSys = New System.Windows.Forms.Button()
+        Me.btnImport = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -131,12 +132,22 @@ Partial Class Mozart_System
         Me.btnProductSys.Text = "Product Storage System"
         Me.btnProductSys.UseVisualStyleBackColor = True
         '
+        'btnImport
+        '
+        Me.btnImport.Location = New System.Drawing.Point(20, 547)
+        Me.btnImport.Name = "btnImport"
+        Me.btnImport.Size = New System.Drawing.Size(194, 50)
+        Me.btnImport.TabIndex = 18
+        Me.btnImport.Text = "Import Data"
+        Me.btnImport.UseVisualStyleBackColor = True
+        '
         'Mozart_System
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1088, 616)
+        Me.ClientSize = New System.Drawing.Size(1088, 640)
+        Me.Controls.Add(Me.btnImport)
         Me.Controls.Add(Me.btnProductSys)
         Me.Controls.Add(Me.btnWeatherSys)
         Me.Controls.Add(Me.btnEquipSys)
@@ -166,4 +177,5 @@ Partial Class Mozart_System
     Friend WithEvents btnEquipSys As Button
     Friend WithEvents btnWeatherSys As Button
     Friend WithEvents btnProductSys As Button
+    Friend WithEvents btnImport As Button
 End Class
