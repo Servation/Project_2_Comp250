@@ -52,7 +52,7 @@ Partial Class Mozart_System
         Me.lblOutput.BackColor = System.Drawing.Color.Transparent
         Me.lblOutput.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblOutput.ForeColor = System.Drawing.Color.White
-        Me.lblOutput.Location = New System.Drawing.Point(300, 155)
+        Me.lblOutput.Location = New System.Drawing.Point(259, 110)
         Me.lblOutput.Name = "lblOutput"
         Me.lblOutput.Padding = New System.Windows.Forms.Padding(5)
         Me.lblOutput.Size = New System.Drawing.Size(147, 35)
